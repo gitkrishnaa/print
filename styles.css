@@ -1,0 +1,22 @@
+.myInput{
+background-color: rgb(91, 213, 250);
+display: flex;
+padding: 10px;
+width: 290px;
+justify-content: center;
+border: 2px solid black;
+}
+.div1{
+  min-width: 100px;
+  min-height: 100px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+}
+.div1>div{
+  min-height: 200px;
+  min-width: 400px;
+  background-color: rgb(85, 20, 172);
+  border: 2px solid black;
+}

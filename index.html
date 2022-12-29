@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+   
+<!-- <button onclick="myFunction()">Copy text</button> -->
+<div class="myInput">
+<code id="myInput">
+      let print={</br>
+        str:"",</br>
+        s:function(val){</br>
+          if(val != undefined){print.str+=val;}</br>
+          function x(){</br>
+            console.log(print.str);print.str="";}</br>
+        return  x;},</br>
+        n:function(val1){console.log(val1)},}
+   <code>
+  </div>
+
+    <button onclick="myFunction()">Copy text</button>
+
+<div>
+<h3>how to use</h3>
+<p>
+  <hr>
+  <h2>print.s(arg1)</h2>
+   <h3>.s() -> for save in same line print</h3>
+   <h3>arg1 -> it is what you want to save in .s() and then print</h3>
+   <hr>
+   <h2>print.s()()</h2>  
+  
+<h3>.s()() -> for print saved value in .s() and then it clear previus saved</h3>
+<hr>
+<h2>print.n()</h2> 
+<h3>.n() -> print in nextline just like console.log()</h3>
+<hr>
+</p>
+</div>
+<h1>see your console for result</h1>
+<p class="codepen" data-height="464.800048828125" data-default-tab="js,result" data-slug-hash="zYLqKqR" data-editable="true" data-user="gitkrishnaa" style="height: 464.800048828125px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/gitkrishnaa/pen/zYLqKqR">
+  Untitled</a> by krishna kumar (<a href="https://codepen.io/gitkrishnaa">@gitkrishnaa</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<!-- <div> -->
+<!-- <div class="div1 div_head"><div>code</div><div>result</div></div>
+<div class="div1"><div><p>
+  
+
+</p> </div><div> </div> </div>
+<div class="div1"><div></div><div></div></div>
+<div class="div1"><div></div><div></div></div>
+<div class="div1"><div></div><div></div></div>
+
+</div> -->
+
+<script>
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.innerText);
+  
+  // Alert the copied text
+  alert("Copied the code: "+copyText.innerText);
+}
+</script>
+  </body>
+</html>
